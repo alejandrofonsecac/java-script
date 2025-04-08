@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificação do seu pais</title>
+    <title>Verificação do seu país</title>
 </head>
 <body>
-    
+    <h1>Me fale o seu país</h1>
+    <input type="text" name="txtpais" id="txtid">
+    <input type="button" value="Enviar" onclick="pais()">
+    <div id="res"></div>
+
+    <script>
+        function pais() {
+            var pais = document.querySelector('input#txtid').value
+            var res = document.querySelector('div#res')
+
+            console.log(`Vivendo em ${pais}`)
+
+            if (pais.toLowerCase() === 'brasil') {
+                res.innerHTML = 'Você mora no Brasil'
+            } else {
+                res.innerHTML = 'Você mora fora do Brasil'
+            }
+        }
+    </script>
 </body>
 </html>
