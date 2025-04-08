@@ -1,5 +1,5 @@
 onload = function() {
-    var btn = document.getElementById('btnSomar')
+    var soma = document.getElementById('Somar')
     var res = document.getElementById('res')
 
     btn.addEventListener('click', somar)
