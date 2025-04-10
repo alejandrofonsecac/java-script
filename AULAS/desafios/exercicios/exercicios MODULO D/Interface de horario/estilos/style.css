@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *{
     padding: 0px;
     margin: 0px;
@@ -20,8 +22,9 @@ header > h1{
 
 main{
     background-color: white;
-    height: 600px;
+    height: 450px;
     width: 500px;
+    border-radius: 15px;
     text-align: center;
     margin: auto;
 }
@@ -31,9 +34,11 @@ main > section > img{
     border-radius: 50%;
     user-select: none;
     text-align: center;
+
 }
 
 main > section > p{
-    font: 1.5em bold;
-    margin: 10px;
+    font: 1.5em bolder;
+    margin-bottom: 50px;
+    margin-top: 15px;
 }
