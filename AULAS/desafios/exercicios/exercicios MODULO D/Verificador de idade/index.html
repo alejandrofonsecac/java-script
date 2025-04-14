@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <style>
+
+        body{
+            background-color: rgb(49, 86, 134);
+        }
+
+        header > h1{
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color: white;
+        }
+
+        main{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+            background-color: white;
+            width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Verificado de Idade</h1>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <form action="" method="get">
+                    <p>Ano de nascimento: <input type="number" name="nasc" id="inasc"><label for="inasc"></label></p>
+                    
+                    
+                    <p>Sexo:
+                    <input type="radio" name="Sexo" id="ismas"> <label for="ismas">Masculino</label>
+                    <input type="radio" name="Sexo" id="isfem"><label for="isfem">Feminino</label>
+                    </p>
+                    <input type="submit" value="Verificar">
+                    
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
