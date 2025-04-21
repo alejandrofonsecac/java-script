@@ -4,4 +4,4 @@ function verificar(){
     var sexo = document.getElementById('isfem')
 }
 
-window.alert(`${sexo}`)
+if()
