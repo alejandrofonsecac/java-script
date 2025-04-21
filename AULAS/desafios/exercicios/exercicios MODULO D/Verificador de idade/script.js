@@ -1,4 +1,4 @@
-function verificar(){
+function verificar(event){
     event.preventDefault()
 
     var data = new Date()
