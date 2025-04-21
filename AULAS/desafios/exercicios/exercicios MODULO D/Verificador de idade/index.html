@@ -38,20 +38,24 @@
     <main>
         <section>
             <div>
-                <form action="" method="get">
-                    <p>Ano de nascimento: <input type="number" name="nasc" id="inasc"><label for="inasc"></label></p>
-                    
+                <form action="" method="post">
+                    <p>Ano de nascimento: <input type="number" name="txtano" id="itxtano"><label for="itxtano"></label></p>
                     
                     <p>Sexo:
-                    <input type="radio" name="Sexo" id="ismas"> <label for="ismas">Masculino</label>
-                    <input type="radio" name="Sexo" id="isfem"><label for="isfem">Feminino</label>
+                    <input type="radio" name="sexo" id="imas"> <label for="imas">Masculino</label>
+                    <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
                     </p>
+                    
                     <input type="submit" value="Verificar" onclick="verificar()">
                     
+                    <div id="res">
+                        <p>Prencha os dados acima para ver o resultado!</p>
+                    </div>
                 </form>
             </div>
         </section>
     </main>
+    <footer></footer>
     <script src="script.js"></script>
 </body>
 </html>
