@@ -1,4 +1,4 @@
-function verificar(){
+function verificar(event){
     event.preventDefault()
     /*
     Criança = até 14
@@ -10,13 +10,14 @@ function verificar(){
     var data = new Date()
     var ano = data.getFullYear()
     var iano = document.getElementById('itxtano')
+    var fano = document.getElementById('itxtano')
     var res = document.querySelector('div#res')
 
     if(Number(fano.value) > ano){
         alert('[ERRO] Verificque os valores novamente')
     } else{
-        var fsexo = document.getElementsByName('sexo')
-        var idade = Number(fano.value - ano)
+        var fsex = document.getElementsByName('sexo')
+        var idade = ano - Number(iano.value);
         var genero = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
@@ -24,25 +25,26 @@ function verificar(){
         if (fsex[0].checked){
             genero = 'mulher'
 
-            if(idade < 13){
-                img.setAttribute('src', 'mulher.crianca.jpg')
-            } else if (idade >= 14 && idade < 18){
-                img.setAttribute('src', 'mulher-adolescente.webp')
-            } else if(idade > 18 && idade < 60){
-                img.setAttribute('src', 'mulher-adulta.jpeg')
-            } else{
-                img.setAttribute('src', 'mulher-idosa.jpg')
+            if (idade <= 14) {
+                img.setAttribute('src', 'mulher-crianca.jpg');
+            } else if (idade <= 17) {
+                img.setAttribute('src', 'mulher-adolescente.webp');
+            } else if (idade <= 60) {
+                img.setAttribute('src', 'mulher-adulta.jpeg');
+            } else {
+                img.setAttribute('src', 'mulher-idosa.jpg');
             }
+            
 
             
         }else if(fsex[1]){
             genero = 'homem'
 
-            if(idade < 13){
+            if(idade <= 14){
                 img.setAttribute('src', 'homem.crianca.webp')
-            } else if (idade >= 14 && idade < 18){
+            } else if (idade <= 17){
                 img.setAttribute('src', 'homem-adolescente.webp')
-            } else if(idade > 18 && idade < 60){
+            } else if(idade <= 60){
                 img.setAttribute('src', 'homem-adulto.jpeg')
             } else{
                 img.setAttribute('src', 'homem-idoso.jpeg')
