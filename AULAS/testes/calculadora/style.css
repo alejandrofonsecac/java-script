@@ -12,15 +12,19 @@ body{
 
 main{
     background-color: white;
-    width: 600px;
+    width: 400px;
     height: 500px;
     
     margin: auto;
     margin-top: 80px;
 }
 
+article{
+    display: flex;
+}
+
 p.botao{
-    font-size: 2em;
+    font-size: 5em;
     font-weight: bolder;
 }
 
