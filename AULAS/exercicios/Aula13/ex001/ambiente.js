@@ -1,10 +1,11 @@
  var i = 1
- while (i < 6){
-    console.log('Tudo bem?')
- }
-
- console.log('Que bom!')
  
+while(i < 6){
+   console.log('Tudo bem?')
+   i++
+ }
+ 
+ console.log('Que bom!')
  
  /*
  console.log('Tudo bem?')
