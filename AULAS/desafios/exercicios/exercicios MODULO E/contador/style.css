@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+    height: 200px;
+    text-align: center;
+    font-size: 2em;
+}
+
+section{
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    padding: 15px;
+}
+
+section > form > p{
+    margin: 10px;
+}
