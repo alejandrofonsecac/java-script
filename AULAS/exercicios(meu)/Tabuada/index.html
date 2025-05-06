@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada</title>
+    <style>
+        body {
+            font-family: Verdana;
+            margin: 30px;
+        }
+        input, button {
+            padding: 6px;
+            margin-top: 10px;
+        }
+        #res {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerador de Tabuada</h1>
+        <input type="number" id="inum" placeholder="Digite um número">
+        <button onclick="gerarTabuada()">Gerar</button>
+
+        <div id="res"></div>
+
+    <script>
+        function gerarTabuada(){
+            var n = document.getElementById('inum')
+            var n1, n2 , n3, n4, n5, n6, n7, n8, n9, n10
+
+            if(n < 0){
+                res.innerHTML = 'Valor invalido, tente novamente'
+            } else if( n > 0 ){
+               n1 = n * 1
+               n2 = n * 2
+               n3 = n * 3
+               n4 = n * 4
+               n5 = n * 5
+               n6 = n * 6
+               n7 = n * 7
+               n8 = n * 8
+               n9 = n * 9
+               n10 = n * 10
+
+               res.innerHTML = 
+            }
+        }
+    </script>
+</body>
+</html>
