@@ -23,8 +23,26 @@
 
     <h1>Descubra os Pares e Ímpares</h1>
         <p>Digite um número:</p>
-        <input type="number" id="numero">
-        <button onclick="verificar()">Verificar</button>
-        <div id="resultado"></div>
+        <input type="number" id="inumero">
+        <button onclick="imparpar()">Verificar</button>
+
+        <div id="res"></div>
+
+        <script>
+            function imparpar(){
+
+                var impar
+                var par
+                var n = Number(document.getElementById('inumero').value);
+
+                if(n == 0){
+                   res.innerHTML = 'Valor invalido, tente novamente'
+                }else if( n % 2 === 1){
+                    res.innerHTML = 'Impar'               
+                }else{
+                    res.innerHTML = 'Par'
+                }
+            }
+        </script>
 </body>
 </html>
