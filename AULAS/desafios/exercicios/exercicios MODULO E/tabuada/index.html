@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="inum">Insira um numero: <input type="number" name="num" id="inum">
+            </label>
+            <input type="button" value="Enviar" onclick="tabuada()">
+        </form>
+
+        <div>
+            <p id="res"></p>
+        </div>
+
+    </main>
+
+    <script>
+        function tabuada(){
+            var num = Number(document.getElementById('inum').value);
+            var res = document.getElementById('res');
+            res.innerHTML = '';
+
+            if(isNaN(num)){
+                res.innerHTML = 'Por favor, insira um número válido';
+                return;
+            }
+
+            for(var i = 1;  i <= 10; i++){
+                var mult = num * i;
+                res.innerHTML += `${num} x ${i} = ${mult}<br>`;
+            }
+        }
+            
+    </script>
+</body>
+</html>
