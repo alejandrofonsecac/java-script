@@ -11,3 +11,7 @@ console.log('Irei mostrar de outra forma agora...')
 for(let pos in valores){
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 }
+
+/*  num.indexOf(7)
+Ele vai pesquisar dentro da array (num) e tentar encontrar o valor 7. Com isso ele ira voltar o valor da POSIÇÃO desse elemento
+*/
