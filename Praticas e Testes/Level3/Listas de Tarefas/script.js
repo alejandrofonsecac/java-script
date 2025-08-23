@@ -1,5 +1,6 @@
-function addList(){
-    let itemList = document.getElementById('iaddList')
-    window.prompt(itemList)
-    console.log(itemList)
+function addList() {
+  let itemList = document.getElementById('addList'); 
+  let valorDigitado = itemList.value
+
+  window.alert(valorDigitado)
 }
