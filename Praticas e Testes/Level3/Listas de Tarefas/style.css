@@ -1,0 +1,6 @@
+.addList{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60px;
+    height: auto;
+}
