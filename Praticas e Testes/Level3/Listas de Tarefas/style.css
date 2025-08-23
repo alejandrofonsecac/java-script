@@ -4,3 +4,13 @@
     width: 60px;
     height: auto;
 }
+
+.item_da_Lista{
+    display: flex;
+    flex-direction: row;
+}
+
+.textoTarefa{
+    font-weight: bold;
+    font-size: 1.3em;
+}
